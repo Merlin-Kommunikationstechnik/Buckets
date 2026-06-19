@@ -29,6 +29,7 @@ PowerShell module for file-based PSObject storage using directory-backed "bucket
 ## AI Agent Conventions
 - When the user says "look for issues for you", check for open GitHub issues labeled `agent.todo` and bring them up for discussion
 - All AI agents must flag every GitHub issue body, PR body, and comment they create with `created with ai - model` on the first line (e.g. `created with ai - model big-pickle`)
+- Maintain `buckets-skill.md` only for significant Buckets behavior or usage changes that future AI agents need to know. Do not churn it for cosmetic refactors, internal-only changes, or low-value wording edits; keep it concise and practical.
 
 ### GitHub Issue Workflow
 1. **Find** — `gh issue list --label agent.todo --state open` to find issues
